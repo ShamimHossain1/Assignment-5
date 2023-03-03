@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c87bcb3d55.js" crossorigin="anonymous"></script>
+    <style>
+        .convert-btn {
+            background-color: #1090D8;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="lg:ml-32 lg:mr-24 mx-5 my-5 ">
+        <div class="rounded bg-[#1090f61a] flex py-4 px-12 items-center justify-between">
+            <div>
+                <h1 class="font-medium text-2xl">Interactive </h1>
+                <h2 class="font-medium text-[#11111199]">Geometry Genius</h2>
+            </div>
+            <div>
+                <button class="bg-[#1090D8] px-6 py-1 font-medium text-white rounded"> <a href="./blog.html"
+                        target="_blank">Blog</a> </button>
+            </div>
+        </div>
+    </section>
+    <section id="main" class="lg:flex lg:mx-16 my-10 ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-y-14 gap-14 lg:px-16 px-5  ">
+            <div id="Triangle" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+                <div class="class= w-3/4 h-3/4 mx-auto ">
+                    <img src="images/triangle.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Triangle</h3>
+                <h4 class="text-slate-700">Area(A) = 0.5 X b X h</h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="triangle-b" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input id="triangle-h" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text" placeholder="h">
+                    <span>cm</span>
+                </div>
+                <button id="triangle-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+            <div id="Rectangle" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+
+                <div id="Rectangle" class="class= w-3/4 h-3/4 mx-auto ">
+                    <img class="" src="images/rectangle.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Rectangle</h3>
+                <h4 class="text-slate-700">Area(A) = w X l</h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="rectangle-w" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text" placeholder="w">
+                    <span>cm</span>
+                    <input id="rectangle-l" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text" placeholder="l">
+                    <span>cm</span>
+                </div>
+                <button id="rectangle-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+            <div id="Parallelogram" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+                <div class="class= w-3/4 h-3/4 mx-auto ">
+                    <img class=" " src="images/parallelogram.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Parallelogram</h3>
+                <h4 class="text-slate-700">Area(A) = b X h</h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="parallelogram-b" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text"
+                        placeholder="b">
+                    <span>cm</span>
+                    <input id="parallelogram-h" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text"
+                        placeholder="h">
+                    <span>cm</span>
+                </div>
+                <button id="parallelogram-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+            <div id="Rhombus" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+                <div class="class= w-3/4 h-3/4 mx-auto ">
+                    <img class=" " src="images/rhombus.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Rhombus</h3>
+                <h4 class="text-slate-700">Area(A) = 0.5 X d<Sub>1</Sub> X d<sub>2</sub> </h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="rhombus-d1" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text" placeholder="d1">
+                    <span>cm</span>
+                    <input id="rhombus-d2" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text" placeholder="d2">
+                    <span>cm</span>
+                </div>
+                <button id="rhombus-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+            <div id="Pentagon" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+                <div class="class= w-3/4 h-3/4 mx-auto ">
+                    <img class=" " src="images/pentagon.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Pentagon</h3>
+                <h4 class="text-slate-700">Area(A) = 0.5 X p X b </h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="pentagon-p" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text" placeholder="p">
+                    <span>cm</span>
+                    <input id="pentagon-b" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text" placeholder="b">
+                    <span>cm</span>
+                </div>
+                <button id="pentagon-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+            <div id="Ellipse" class="flex flex-col text-center gap-4  p-12 shadow-lg rounded-lg ">
+                <div class="class= w-3/4 h-3/4 mx-auto ">
+                    <img class=" " src="images/ellipse.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl mt-3 text-slate-700">Ellipse</h3>
+                <h4 class="text-slate-700">Area(A) = <img src="./images/pi.svg" class="w-3 inline" alt=""> ab</h4>
+                <div class="  flex gap-3 items-center justify-center ">
+                    <input id="ellipse-a" class=" w-20 px-2 py-2 bg-gray-200 rounded-md" type="text" placeholder="a">
+                    <span>cm</span>
+                    <input id="ellipse-b" class=" w-20 px-2 py-2  bg-gray-200 rounded-md" type="text" placeholder="b">
+                    <span>cm</span>
+                </div>
+                <button id="ellipse-btn"
+                    class="bg-sky-500 text-white font-semibold text-2xl py-3 rounded-lg mt-8 mb-4">Calculate</button>
+
+
+            </div>
+
+
+        </div>
+        <div class=" p-10 shadow-lg lg:mr-10 mx-1   lg:w-1/3 md:mx-5  lg:h-1/2  rounded-lg  ">
+
+            <h3 class="font-bold text-center text-2xl mt-3 mb-10 text-slate-700 underline">Area Calculation</h3>
+
+
+            <ol id="calculation-list"
+                class="leading-3 font-medium lg:text-lg space-y-4 list-decimal md:px-10 md:mx-10 lg:m-0 lg:px-2">
+
+            </ol>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <script src="./js/hover.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
