@@ -67,7 +67,7 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
         alert('Input Valid Number');
         return;
     }
-    const Area = 0.5 * b * h;
+    const Area = (0.5 * b * h).toFixed(2);
     const Name = 'Triangle'
     appendCalculation(Name, Area);
 });
